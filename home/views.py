@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from .forms import *
+from .models import *
 
 # Create your views here.
-def vista_registrar(request):
-    return render(request,'registrar.html')
+def vista_registro(request):
+    formulario = forms_registro()
+    return render(request,'registro.html')
 
 
 def vista_lista(request):
